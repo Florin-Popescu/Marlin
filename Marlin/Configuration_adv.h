@@ -2016,7 +2016,7 @@
  *
  * See https://marlinfw.org/docs/features/lin_advance.html for full instructions.
  */
-#define LIN_ADVANCE
+//#define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
   #define LIN_ADVANCE_K 0.0    // Unit: mm compression per 1mm/s extruder speed
@@ -2047,11 +2047,11 @@
  * Override if the automatically selected points are inadequate.
  */
 #if EITHER(AUTO_BED_LEVELING_3POINT, AUTO_BED_LEVELING_UBL)
-  #define PROBE_PT_1_X (X_MIN_POS + 10)
+  #define PROBE_PT_1_X (X_MIN_POS)
   #define PROBE_PT_1_Y (Y_MIN_POS + 10)
   #define PROBE_PT_2_X (X_MAX_POS - 60)
   #define PROBE_PT_2_Y (Y_MIN_POS + 10)
-  #define PROBE_PT_3_X ((X_MIN_POS + X_MAX_POS) / 2)
+  #define PROBE_PT_3_X (X_BED_SIZE / 2)
   #define PROBE_PT_3_Y (Y_MAX_POS - 30)
 #endif
 
