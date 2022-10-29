@@ -2066,7 +2066,7 @@
 
 #if ENABLED(NOZZLE_CLEAN_FEATURE)
   // Default number of pattern repetitions
-  #define NOZZLE_CLEAN_STROKES  3
+  #define NOZZLE_CLEAN_STROKES  2
 
   // Default number of triangles
   #define NOZZLE_CLEAN_TRIANGLES  3
@@ -2084,7 +2084,7 @@
   #define NOZZLE_CLEAN_CIRCLE_MIDDLE { {  40, -3.5, Z_MIN_POS } }
 
   // Move the nozzle to the initial position after cleaning
-  #define NOZZLE_CLEAN_GOBACK
+  //#define NOZZLE_CLEAN_GOBACK
 
   // For a purge/clean station that's always at the gantry height (thus no Z move)
   //#define NOZZLE_CLEAN_NO_Z
