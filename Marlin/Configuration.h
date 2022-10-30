@@ -2066,8 +2066,7 @@
 
 #if ENABLED(NOZZLE_CLEAN_FEATURE)
   // Default number of pattern repetitions
-  #define NOZZLE_CLEAN_STROKES  2
-
+  #define NOZZLE_CLEAN_STROKES  1
   // Default number of triangles
   #define NOZZLE_CLEAN_TRIANGLES  3
 
