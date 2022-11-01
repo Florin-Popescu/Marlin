@@ -1493,10 +1493,10 @@
 #define Y_BED_SIZE 215
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
-#define X_MIN_POS -2
+#define X_MIN_POS -3
 #define Y_MIN_POS -22
 #define Z_MIN_POS 0
-#define X_MAX_POS 248
+#define X_MAX_POS 247
 #define Y_MAX_POS 215
 #define Z_MAX_POS 230
 //#define I_MIN_POS 0
@@ -1811,7 +1811,7 @@
 #define LCD_BED_TRAMMING
 
 #if ENABLED(LCD_BED_TRAMMING)
-  #define BED_TRAMMING_INSET_LFRB { 32, 36, 37, 33 } // (mm) Left, Front, Right, Back insets
+  #define BED_TRAMMING_INSET_LFRB { 32, 36, 38, 33 } // (mm) Left, Front, Right, Back insets
   #define BED_TRAMMING_HEIGHT      0        // (mm) Z height of nozzle at leveling points
   #define BED_TRAMMING_Z_HOP       4.0        // (mm) Z height of nozzle between leveling points
   //#define BED_TRAMMING_INCLUDE_CENTER       // Move to the center after the last corner
