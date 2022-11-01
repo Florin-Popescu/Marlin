@@ -2072,15 +2072,15 @@
 
   // Specify positions for each tool as { { X, Y, Z }, { X, Y, Z } }
   // Dual hotend system may use { {  -20, (Y_BED_SIZE / 2), (Z_MIN_POS + 1) },  {  420, (Y_BED_SIZE / 2), (Z_MIN_POS + 1) }}
-  #define NOZZLE_CLEAN_START_POINT { {  30, -5, Z_MIN_POS } }
-  #define NOZZLE_CLEAN_END_POINT   { {  50, -2, Z_MIN_POS } }
+  #define NOZZLE_CLEAN_START_POINT { {  30, -12, Z_MIN_POS } }
+  #define NOZZLE_CLEAN_END_POINT   { {  50, -5, Z_MIN_POS } }
 
   // Circular pattern radius
   #define NOZZLE_CLEAN_CIRCLE_RADIUS 1.5
   // Circular pattern circle fragments number
   #define NOZZLE_CLEAN_CIRCLE_FN 10
   // Middle point of circle
-  #define NOZZLE_CLEAN_CIRCLE_MIDDLE { {  40, -3.5, Z_MIN_POS } }
+  #define NOZZLE_CLEAN_CIRCLE_MIDDLE { {  40, -8.5, Z_MIN_POS } }
 
   // Move the nozzle to the initial position after cleaning
   //#define NOZZLE_CLEAN_GOBACK
